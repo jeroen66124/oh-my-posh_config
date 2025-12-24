@@ -5,17 +5,16 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#1F3A5F",
+          "background": "transparent",
           "foreground": "#ffffff",
-          "style": "diamond",
-          "leading_diamond": "\ue0b6",
+          "style": "plain",
           "template": " \uf179 ",
-          "trailing_diamond": "\ue0b0",
           "type": "os"
         },
         {
           "background": "#1F3A5F",
           "foreground": "#ffffff",
+          "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": " {{ .UserName }} ",
           "trailing_diamond": "\ue0b0",
