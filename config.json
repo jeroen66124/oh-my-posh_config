@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#61AFEF",
+          "background": "#1F3A5F",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -14,13 +14,11 @@
           "type": "session"
         },
         {
-          "background": "#C678DD",
-          "foreground": "#ffffff",
+          "background": "#8EC9E8",
+          "foreground": "#0B2239",
           "powerline_symbol": "\ue0b0",
           "options": {
-            "style": "agnoster",
-            "home_icon": "\ueb06",
-            "folder_separator_icon": " \ue0b1 "
+            "style": "full"
           },
           "style": "powerline",
           "template": " {{ .Path }} ",
