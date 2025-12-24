@@ -50,14 +50,6 @@
           "type": "executiontime"
         },
         {
-          "background": "#1F3A5F",
-          "foreground": "#8EC9E8",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " {{ .CurrentDate | date \"15:04:05\" }} ",
-          "type": "time"
-        },
-        {
           "foreground": "#ffffff",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
@@ -68,6 +60,21 @@
           "properties": {
             "always_enabled": true
           }
+        }
+      ]
+    },
+    {
+      "alignment": "right",
+      "type": "prompt",
+      "segments": [
+        {
+          "background": "#1F3A5F",
+          "foreground": "#8EC9E8",
+          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "style": "powerline",
+          "template": " {{ .CurrentDate | date \"15:04:05\" }} ",
+          "type": "time"
         }
       ]
     }
