@@ -56,9 +56,9 @@
         {
           "background": "#1F3A5F",
           "foreground": "#8EC9E8",
-          "leading_diamond": "\ue0c5",
-          "trailing_diamond": "\ue0bc",
-          "style": "diamond",
+          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "style": "powerline",
           "template": " {{ .CurrentDate | date \"15:04:05\" }} ",
           "type": "time"
         }
