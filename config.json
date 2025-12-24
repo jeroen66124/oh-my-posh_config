@@ -7,7 +7,15 @@
         {
           "background": "#1F3A5F",
           "foreground": "#ffffff",
+          "style": "diamond",
           "leading_diamond": "\ue0b6",
+          "template": " \uf179 ",
+          "trailing_diamond": "\ue0b0",
+          "type": "os"
+        },
+        {
+          "background": "#1F3A5F",
+          "foreground": "#ffffff",
           "style": "diamond",
           "template": " {{ .UserName }} ",
           "trailing_diamond": "\ue0b0",
@@ -33,18 +41,51 @@
           "type": "git"
         },
         {
-          "background": "#FF6471",
+          "background": "#49404f",
           "foreground": "#ffffff",
-          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "leading_diamond": "<transparent,#49404f>\ue0b0</>",
           "style": "diamond",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
-          "trailing_diamond": "\ue0b4",
-          "type": "python"
+          "template": " {{ .FormattedMs }}s ",
+          "trailing_diamond": "\ue0b0",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#1F3A5F",
+          "foreground": "#8EC9E8",
+          "leading_diamond": "\ue0c5",
+          "trailing_diamond": "\ue0bc",
+          "style": "diamond",
+          "template": " {{ .CurrentDate | date \"15:04:05\" }} ",
+          "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#ffffff",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ff0000{{ end }}"
+          ],
+          "options": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "status"
         }
       ],
       "type": "prompt"
     }
   ],
-  "final_space": true,
   "version": 4
 }
